@@ -34,7 +34,7 @@ public class CustomLog {
 
     private static final String DATE_PATTERN = "yyyy-MM-dd";
 
-    public static <T> void log(T t) throws IOException, NoSuchFieldException {
+    public static <T> void log(T t) throws IOException {
         String dataFormatada = dateFormatted();
 
         String filePath = PATH_FILE + dataFormatada;

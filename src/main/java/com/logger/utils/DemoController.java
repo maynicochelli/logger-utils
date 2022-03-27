@@ -11,7 +11,7 @@ import java.io.IOException;
 public class DemoController {
 
     @GetMapping
-    public void getMessage() throws IOException, NoSuchFieldException {
+    public void getMessage() throws IOException {
         PojoA pojo = new PojoA("Nika", 333);
 
         CustomLog.log(pojo);
