@@ -53,7 +53,7 @@ public class CustomLog {
 
         toPojoB(pojoB, t);
 
-        customLogAppender(pojoB);
+        customAppender(pojoB);
 
         fileHandler.close();
     }
@@ -72,7 +72,7 @@ public class CustomLog {
         BeanUtils.copyProperties(t, pojoB);
     }
 
-    private static void customLogAppender(PojoB pojoB) {
+    private static void customAppender(PojoB pojoB) {
         logger.info("Nome: " + pojoB.getNome() + " | " + "Idade: " + pojoB.getIdade());
     }
 
